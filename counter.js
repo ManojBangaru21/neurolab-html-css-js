@@ -1,18 +1,38 @@
-let counter = 0;
+class Person{
+  constructor(name, age, sex){
+  this.name=name;
+  this.age=age;
+  this.sex=sex;
+  }
 
-// getting DOM elements using id
-const incrementButton = document.getElementById("increment");
-const decrementButton = document.getElementById("decrement");
-const counterDisplay = document.getElementById("counter");
 
-// onclick action for increment button
-incrementButton.addEventListener("click", () => {
-  counter++;
-  counterDisplay.innerText = counter;
-});
+greet()
+{
+  console.log(`Hello ${this.name}`);
+  console.log(`age is ${this.age}`);
+  console.log(`sex is ${this.sex}`);
+}
+}
 
-// onclick action for decrement button
-decrementButton.addEventListener("click", () => {
-  counter--;
-  counterDisplay.innerText = counter;
-});
+//let person1 = new Person("Manoj", 29, 'Male');
+//person1.greet();
+
+class Student extends Person{
+  constructor(name,address, state, Country){
+    super(name)
+    this.address = address
+    this.state = state
+    this.Country = Country
+  }
+  stu1_greet(){
+    console.log(`address is ${this.name}`)
+    console.log(`address is ${this.address}`)
+    console.log(`state is ${this.state}`)
+    console.log(`Country is ${this.Country}`)
+    
+  }
+}
+
+let stu1 = new Student('Manoj',"KPHB", 'TEL', 'Ind')
+
+stu1.stu1_greet()
