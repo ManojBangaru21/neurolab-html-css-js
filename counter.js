@@ -20,15 +20,12 @@ greet()
 class Student extends Person{
   constructor(name,age,address, state, Country){
     super(name,age)
-    this.name =name
-    this.age = age
     this.address = address
     this.state = state
     this.Country = Country
   }
   stu1_greet(){
     console.log(`name is ${this.name}`)
-    console.log(`age is ${this.age}`)
     console.log(`age is ${this.age}`)
     console.log(`address is ${this.address}`)
     console.log(`state is ${this.state}`)
