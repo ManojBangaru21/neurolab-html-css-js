@@ -67,3 +67,23 @@
 // obj1.greet();
 // let obj2  = new Person("Deepu");
 // obj2.greet();
+
+
+//Functional Inheritance
+
+function Upper(Value){
+  var berth = {} //creates an empty object
+  berth.name = lower.name // assigns new attribute to the object called as name and Lower is added
+  return berth
+}
+
+function Middle(value){
+  var berth1 = Upper(value)
+  berth1.greet = function(){
+    return `Hello ${berth1.name}`
+  }
+return berth1
+}
+
+var myCutedog = Upper({name : 'snoop'})
+console.log(myCutedog.greet())
