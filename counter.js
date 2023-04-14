@@ -39,31 +39,31 @@
 // stu1.stu1_greet()
 
 
-class Person{
-  constructor(name,occupation){
-    this.name = name;
-    this.occupation = "BA" ;
-  }
+// class Person{
+//   constructor(name,occupation){
+//     this.name = name;
+//     this.occupation = "BA" ;
+//   }
 
-  greet(){
-    console.log(`Name is ${this.name}` )
-    console.log( `Occupation is ${this.occupation}`)
-  }
+//   greet(){
+//     console.log(`Name is ${this.name}` )
+//     console.log( `Occupation is ${this.occupation}`)
+//   }
 
-}
+// }
 
-class Student extends Person{
-  constructor(name,occupation){
-    super(name)
-    this.occupation = "Senior BA"
-  }
-  greet(){
-    console.log(`Name is ${this.name}`);
-    console.log( `Occupation is ${this.occupation}`);
-  }
-}
+// class Student extends Person{
+//   constructor(name,occupation){
+//     super(name)
+//     this.occupation = "Senior BA"
+//   }
+//   greet(){
+//     console.log(`Name is ${this.name}`);
+//     console.log( `Occupation is ${this.occupation}`);
+//   }
+// }
  
-let obj1 = new Student("Manoj");
-obj1.greet();
-let obj2  = new Person("Deepu");
-obj2.greet();
+// let obj1 = new Student("Manoj");
+// obj1.greet();
+// let obj2  = new Person("Deepu");
+// obj2.greet();
