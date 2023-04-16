@@ -71,9 +71,9 @@
 
 //Functional Inheritance
 
-function Upper(Value){
+function Upper(value){
   var berth = {} //creates an empty object
-  berth.name = lower.name // assigns new attribute to the object called as name and Lower is added
+  berth.name = value.name // assigns new attribute to the object called as name and Lower is added
   return berth
 }
 
@@ -85,5 +85,5 @@ function Middle(value){
 return berth1
 }
 
-var myCutedog = Upper({name : 'snoop'})
+var myCutedog = Middle({name : 'snoop'})
 console.log(myCutedog.greet())
